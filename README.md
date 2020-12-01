@@ -42,8 +42,12 @@ Test cases are broken up in two files
 `test_alphabet.py` focuses on creating tests around the assumption that the given alphabet is ['a','b','c']. I found it easier to test against a known alphabetical order.
 
 ## Thoughts
-I had quite a bit of fun on this problem as it dives back into graph theory which I really enjoy but rarely use. 
-
+I had quite a bit of fun on this problem as it dives back into graph theory which I really enjoy but rarely use. I ended up going through a few iterations of my solutions ss I expanded my test cases which would fail my previous solution.
+### Challenges
+- I assumed given the words ["a", "ab"], I could assert that 'a' came before 'b' however that's not true. The above words give zero information about an alphabet.
+- I created a directed graph for each letter and all their predecessors however that created a directed graph that couldn't differenciate priority between letters.
+- I hate to admit it but it took a few iterations to realize how to find the difference between important suffixes and throw aways.
+- I even looked up [alphabetical order](https://en.wikipedia.org/wiki/Alphabetical_order) on wikipedia to find this tidbit:`If a position is reached where one string has no more letters to compare while the other does, then the first (shorter) string is deemed to come first in alphabetical order.`
 
 
 
