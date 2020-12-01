@@ -1,4 +1,4 @@
-# Alphabet
+# Alphabet Soup
 
 ### Problem
 Given a list of words sorted in alphabetical order by an unknown alphabet, determine the alphabet for the given words.
@@ -30,10 +30,20 @@ from alphabet import Alphabet
 ['b','a','c']
 ```
 
-### Running tests
-While in the root folder, to run all the tests with:
+### Tests
+To run all the tests - in the root folder run:
 ```bash
 python3 -m unittest
 ```
+Test cases are broken up in two files
+1. [test_cases.py](tests/test_cases.py)
+`test_cases.py` focuses on random alphabets and their created words
+2. [test_alphabet.py](tests/test_alphabet.py)
+`test_alphabet.py` focuses on creating tests around the assumption that the given alphabet is ['a','b','c']. I found it easier to test against a known alphabetical order.
+
+## Thoughts
+I had quite a bit of fun on this problem as it dives back into graph theory which I really enjoy but rarely use. 
+
+
 
 
